@@ -2,7 +2,7 @@
 
 Portfólio pessoal single-page, com tema escuro inspirado no GitHub. Construído com HTML, CSS e JavaScript puros (sem frameworks ou build step).
 
-**[Ver demo ao vivo](#)** _(publique no GitHub Pages e cole o link aqui)_
+**[Ver demo ao vivo](#)** _https://gideanms.github.io/GideanMS/_
 
 ## Seções
 
