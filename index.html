@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gidean Matos — Software Developer</title>
+<meta name="description" content="Gidean Matos — Software Developer focado em backend com C# e ASP.NET Core.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Devicon (tech icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <a href="#hero" class="nav-brand">gidean<span class="dot">.</span>dev</a>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#factory-manager">project</a>
+    <a href="#journey">journey</a>
+    <a href="#github">github</a>
+    <a href="#contact">contact</a>
+  </div>
+  <a href="assets/resume.pdf" class="nav-resume" download>Resume ↓</a>
+</nav>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow"><span class="status-dot"></span> disponível para novas oportunidades</p>
+        <h1 class="hero-name">Gidean Matos</h1>
+        <h2 class="hero-role">Software Developer</h2>
+        <p class="hero-tagline">Building reliable software with <span class="accent">C#</span> and <span class="accent">.NET</span></p>
+
+        <div class="hero-actions">
+          <a href="https://github.com/gideanmatos" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="devicon-github-original"></i> GitHub
+          </a>
+          <a href="https://linkedin.com/in/gideanmatos" target="_blank" rel="noopener" class="btn btn-outline">
+            LinkedIn
+          </a>
+          <a href="assets/resume.pdf" class="btn btn-outline" download>
+            Resume
+          </a>
+          <a href="mailto:gidean.matos@email.com" class="btn btn-outline">
+            Email
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-avatar-wrap">
+        <button class="avatar-toggle" id="avatarToggle" title="Alternar avatar" aria-label="Alternar entre foto e octocat">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 1 0 7.75 10h-2.08A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35Z"/></svg>
+        </button>
+        <div class="avatar-frame" id="avatarFrame">
+          <img id="avatarImg" src="assets/profile.jpg" alt="Foto de Gidean Matos"
+               onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 300 300%27><rect width=%27300%27 height=%27300%27 fill=%27%23161B22%27/><text x=%2750%25%27 y=%2755%25%27 font-family=%27JetBrains Mono, monospace%27 font-size=%2790%27 fill=%27%2358A6FF%27 text-anchor=%27middle%27>GM</text></svg>'">
+        </div>
+      </div>
+    </div>
+    <a href="#terminal" class="scroll-cue" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ TERMINAL ============ -->
+  <section id="terminal" class="terminal-section reveal">
+    <div class="terminal-window">
+      <div class="terminal-titlebar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">gidean@portfolio: ~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <p class="term-line"><span class="prompt">Gidean@Portfolio:~$</span></p>
+        <p class="term-line"><span class="cmd">&gt; whoami</span></p>
+        <div id="terminalOutput" class="term-output"></div>
+
+        <div id="terminalHistory" class="term-history" aria-live="polite"></div>
+
+        <div class="term-input-line">
+          <span class="prompt">&gt;</span>
+          <input
+            id="terminalInput"
+            class="term-input"
+            type="text"
+            autocomplete="off"
+            autocapitalize="off"
+            spellcheck="false"
+            aria-label="Terminal interativo — digite um comando"
+            placeholder="digite 'help'"
+          />
+          <span class="cursor" id="terminalCaretHint">▌</span>
+        </div>
+      </div>
+    </div>
+    <p class="terminal-hint">clique no terminal e digite <code>help</code> para ver os comandos disponíveis</p>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about reveal">
+    <p class="section-eyebrow">// about</p>
+    <h2 class="section-title">About</h2>
+    <div class="about-content">
+      <p>Sou desenvolvedor de software com experiência no desenvolvimento de APIs utilizando <strong>ASP.NET Core</strong>, <strong>Entity Framework Core</strong> e <strong>SQL Server</strong>.</p>
+      <p>Tenho interesse em arquitetura de software, boas práticas e desenvolvimento backend.</p>
+      <p>Atualmente estou expandindo meu portfólio através do <strong>FactoryManager</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section skills reveal">
+    <p class="section-eyebrow">// skills</p>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li><i class="devicon-csharp-plain colored"></i> C#</li>
+          <li><i class="devicon-azuresqldatabase-plain"></i> SQL</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Frameworks</h3>
+        <ul>
+          <li><i class="devicon-dotnetcore-plain colored"></i> ASP.NET Core</li>
+          <li><i class="devicon-dot-net-plain colored"></i> Entity Framework</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <ul>
+          <li><i class="devicon-microsoftsqlserver-plain colored"></i> SQL Server</li>
+          <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Cloud</h3>
+        <ul>
+          <li><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS EC2</li>
+          <li><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS S3</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <ul>
+          <li><i class="devicon-git-plain colored"></i> Git</li>
+          <li><i class="devicon-github-original"></i> GitHub</li>
+          <li><span class="icon-swagger" aria-hidden="true"></span> Swagger</li>
+          <li><i class="devicon-docker-plain colored"></i> Docker</li>
+          <li><i class="devicon-postman-plain colored"></i> Postman</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACTORY MANAGER ============ -->
+  <section id="factory-manager" class="section factory-manager reveal">
+    <p class="section-eyebrow">// featured project</p>
+    <h2 class="section-title">FactoryManager</h2>
+    <p class="fm-subtitle">Industrial Management API</p>
+
+    <div class="fm-content">
+      <div class="fm-preview">
+        <div class="fm-preview-window">
+          <div class="terminal-titlebar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">factorymanager · swagger</span>
+          </div>
+          <div class="fm-preview-body">
+            <div class="fm-endpoint"><span class="verb get">GET</span> /api/machines</div>
+            <div class="fm-endpoint"><span class="verb post">POST</span> /api/production-orders</div>
+            <div class="fm-endpoint"><span class="verb put">PUT</span> /api/maintenance/{id}</div>
+            <div class="fm-endpoint"><span class="verb get">GET</span> /api/inventory/status</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fm-details">
+        <p>API para gestão de processos industriais: controle de máquinas, ordens de produção, manutenção e estoque, construída com foco em performance e organização em camadas.</p>
+
+        <div class="fm-tech">
+          <span>C#</span>
+          <span>ASP.NET Core</span>
+          <span>Entity Framework Core</span>
+          <span>SQL Server</span>
+          <span>Docker</span>
+          <span>Swagger</span>
+        </div>
+
+        <div class="fm-actions">
+          <a href="https://github.com/gideanmatos/factory-manager" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="devicon-github-original"></i> Repositório
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline">Swagger</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline">Documentação</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section id="journey" class="section journey reveal">
+    <p class="section-eyebrow">// journey</p>
+    <h2 class="section-title">Journey</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2022</span>
+          <h3>Cinemark</h3>
+          <p>Início da jornada profissional, primeiro contato com rotina de trabalho e trabalho em equipe.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2024</span>
+          <h3>Software Development Internship</h3>
+          <p>Primeiros passos como desenvolvedor, aprendendo C#, .NET e boas práticas de backend.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">2025</span>
+          <h3>FactoryManager</h3>
+          <p>Desenvolvimento do projeto principal do portfólio, aprofundando arquitetura de APIs.</p>
+        </div>
+      </div>
+      <div class="timeline-item timeline-item-active">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span class="timeline-year">Today</span>
+          <h3>Looking for Backend opportunities</h3>
+          <p>Buscando oportunidades para aplicar e evoluir minhas habilidades como desenvolvedor backend.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GITHUB ============ -->
+  <section id="github" class="section github reveal">
+    <p class="section-eyebrow">// github</p>
+    <h2 class="section-title">GitHub</h2>
+
+    <div class="github-grid">
+      <img class="github-card" src="https://github-readme-stats.vercel.app/api?username=gideanmatos&show_icons=true&theme=github_dark&bg_color=161B22&title_color=58A6FF&text_color=F0F6FC&icon_color=58A6FF&border_color=30363D" alt="GitHub Stats" loading="lazy">
+      <img class="github-card" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gideanmatos&layout=compact&theme=github_dark&bg_color=161B22&title_color=58A6FF&text_color=F0F6FC&border_color=30363D" alt="Top Languages" loading="lazy">
+      <img class="github-card github-card-wide" src="https://github-readme-streak-stats.herokuapp.com/?user=gideanmatos&theme=github-dark-blue&background=161B22&border=30363D&stroke=30363D&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" alt="Contribution Streak" loading="lazy">
+    </div>
+    <p class="github-note">substitua <code>gideanmatos</code> pelo seu usuário do GitHub nas URLs dos widgets.</p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact reveal">
+    <p class="section-eyebrow">// contact</p>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="contact-sub">Aberto a oportunidades como desenvolvedor backend. Vamos conversar.</p>
+
+    <div class="contact-grid">
+      <a href="https://linkedin.com/in/gideanmatos" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">/in/gideanmatos</span>
+      </a>
+      <a href="https://github.com/gideanmatos" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">@gideanmatos</span>
+      </a>
+      <a href="mailto:gidean.matos@email.com" class="contact-card">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">gidean.matos@email.com</span>
+      </a>
+      <a href="assets/resume.pdf" download class="contact-card contact-card-primary">
+        <span class="contact-label">Resume</span>
+        <span class="contact-value">Download PDF ↓</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; Developed by <strong>Gidean Matos</strong></p>
+  <p class="footer-year">2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
