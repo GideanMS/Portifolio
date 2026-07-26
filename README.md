@@ -1,6 +1,6 @@
 # Gidean Matos — Portfolio
 
-Portfólio pessoal single-page, com tema escuro inspirado no GitHub. Construído com HTML, CSS e JavaScript puros (sem frameworks ou build step).
+Portfólio pessoal single-page. Construído com HTML, CSS e JavaScript puros (sem frameworks ou build step).
 
 **[Ver demo ao vivo](#)** _https://gideanms.github.io/GideanMS/_
 
@@ -26,31 +26,12 @@ Gidean-Portfolio/
 ├── js/
 │   └── script.js
 ├── assets/
-│   ├── profile.jpg     # sua foto (adicione aqui)
-│   ├── octocat.png     # não obrigatório — usa o octocat oficial do GitHub por padrão
-│   └── resume.pdf       # seu currículo em PDF (adicione aqui)
+│   ├── profile.jpg     
+│   ├── octocat.png     
+│   └── resume.pdf       
 └── README.md
 ```
 
-## Como personalizar
-
-1. **Foto e currículo**: coloque `profile.jpg` e `resume.pdf` dentro de `assets/`.
-2. **Links**: troque `gideanmatos` pelo seu usuário real do GitHub/LinkedIn em `index.html` (botões do Hero, seção Contact e widgets do GitHub).
-3. **E-mail**: troque `gidean.matos@email.com` pelo seu e-mail real.
-4. **Projeto FactoryManager**: atualize os links de repositório, Swagger e documentação na seção `#factory-manager`.
-5. **Cores**: todas as cores estão centralizadas em `:root` no topo de `css/style.css` — troque os valores hex para gerar um novo tema.
-
-## Paleta de cores
-
-| Uso        | Cor       |
-|------------|-----------|
-| Background | `#0D1117` |
-| Cards      | `#161B22` |
-| Border     | `#30363D` |
-| Primary    | `#58A6FF` |
-| Secondary  | `#8B949E` |
-| Text       | `#F0F6FC` |
-| Hover      | `#79C0FF` |
 
 ## Rodando localmente
 
