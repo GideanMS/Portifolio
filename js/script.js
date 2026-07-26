@@ -64,7 +64,7 @@ function initTerminal() {
 
   const introLines = [
     'Software Developer',
-    '2 years of professional experience.',
+    '2+ years of professional experience.',
     'Focused on Backend Development',
     'using ASP.NET Core.'
   ];
@@ -98,19 +98,19 @@ function initTerminal() {
       'veja a seção "FactoryManager" abaixo para detalhes.',
 
     journey: () =>
-      '2022  Cinemark\n' +
-      '2024  Software Development Internship\n' +
-      '2025  FactoryManager\n' +
+      '2021 - 2022  Atendente - Cinemark\n' +
+      '2022 - 2024  Estagio - Cinemark\n' +
+      '2026  FactoryManager\n' +
       'today Looking for Backend opportunities',
 
     contact: () =>
-      'LinkedIn  linkedin.com/in/gideanmatos\n' +
-      'GitHub    github.com/gideanmatos\n' +
-      'Email     gidean.matos@email.com',
+      'LinkedIn  linkedin.com/in/gideanmatossantana\n' +
+      'GitHub    github.com/GideanMS\n' +
+      'Email     g1d34n@gmail.com',
 
     github: () => {
-      window.open('https://github.com/gideanmatos', '_blank', 'noopener');
-      return 'abrindo github.com/gideanmatos ...';
+      window.open('https://github.com/GideanMS', '_blank', 'noopener');
+      return 'abrindo github.com/GideanMS ...';
     },
 
     ls: () => 'about  skills  factory-manager  journey  github  contact',
