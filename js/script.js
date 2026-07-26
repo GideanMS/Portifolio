@@ -253,7 +253,7 @@ function initAvatarToggle() {
   const img = document.getElementById('avatarImg');
   if (!toggle || !img) return;
 
-  const profileSrc = 'assets/profile.jpg';
+  const profileSrc = 'assets/profile.png';
   const octocatSrc = 'https://github.githubassets.com/images/modules/logos_page/Octocat.png';
 
   let showingOctocat = false;
