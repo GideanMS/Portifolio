@@ -2,7 +2,7 @@
 
 Portfólio pessoal single-page. Construído com HTML, CSS e JavaScript puros (sem frameworks ou build step).
 
-**[Ver demo ao vivo](#)** _https://gideanms.github.io/GideanMS/_
+_https://gideanms.github.io/GideanMS/_
 
 ## Seções
 
